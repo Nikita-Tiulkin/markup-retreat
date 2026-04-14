@@ -1,1 +1,28 @@
-/* Пиши стили тут */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    list-style: none;
+}
+
+.star {
+    font-size: 48px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.star::before {
+    content: "★";
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: #ffcc00;
+}
